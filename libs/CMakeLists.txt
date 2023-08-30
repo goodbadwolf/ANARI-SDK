@@ -11,6 +11,11 @@ if (BUILD_HELIDE_DEVICE)
   add_subdirectory(helide)
 endif()
 
+option(BUILD_KHILARI_DEVICE "Build 'khilari' device" ON)
+if (BUILD_KHILARI_DEVICE)
+  add_subdirectory(khilari)
+endif()
+
 if(BUILD_TESTING OR BUILD_EXAMPLES)
   add_subdirectory(anari_test_scenes)
 endif()
